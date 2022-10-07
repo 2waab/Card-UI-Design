@@ -1,0 +1,256 @@
+/* Google Font - Poppins - */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3f2fd;
+}
+/* Start Container */
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #eee;
+    position: relative;
+}
+/* End Container */
+/* Start Front Card */
+.card .front {
+    position: absolute;
+    background-image: url('/image/bg.png');
+    background-size: cover;
+    padding: 25px;
+    border-radius: 28px;
+    max-width: 380px;
+    min-height: 225px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.front header,
+.front .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.front .logo img {
+    width: 48px;
+    margin-right: 10px;
+}
+.front h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.front header .chip {
+    width: 60px;
+}
+.front h6 {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+}
+.front h5.number {
+    margin-top: 4px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.front h5.name {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.front .card-details {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+/* End Front Card */
+/* Start Back Card */
+.card .back {
+    position: absolute;
+    background-image: url('/image/bg.png');
+    background-size: cover;
+    padding: 25px;
+    border-radius: 28px;
+    max-width: 380px;
+    min-height: 225px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transform: rotateY(180deg);
+}
+.back .line {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.back .ccv {
+    width: 100%;
+    margin-top: 40px;
+}
+.back .ccv span {
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.back .white-projres {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.back .logo {
+    display: flex;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+.back .logo img {
+    width: 48px;
+}
+/* End Back Card */
+/* Start Forms */
+.forms {
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.column-1 {
+    width: 100%;
+    position: relative;
+    transition: 0.5s;
+    left: 0;
+    opacity: 1;
+}
+.column-1 .data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.column-1 .data input {
+    display: block;
+    width: 48%;
+}
+.column-1 div:not(:last-child) {
+    margin-bottom: 10px;
+}
+.column-1 label {
+    display: block;
+    color: #333;
+}
+.column-1 input {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.column-1 input:focus {
+    border-color: #0075ff;
+}
+.column-1 button {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #0075ff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.column-2 {
+    width: 100%;
+    position: absolute;
+    right: -100%;
+    transition: 0.5s;
+    opacity: 0;
+}
+.column-2 h3 {
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+}
+.column-2 button:nth-child(2) {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #0075ff;
+    color: #0075ff;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+.column-2 button:nth-child(3) {
+    display: block;
+    width: 100%;
+    background-color: #0075ff;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* End Forms */
+/* Start Event */
+.column-1.hide {
+    left: -100%;
+    opacity: 0;
+}
+.column-2.show {
+    right: 0;
+    opacity: 1;
+}
+.card {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+.card .front,
+.card .back {
+    backface-visibility: hidden;
+}
+.card.flip {
+    transform: rotateY(-180deg);
+}
+/* End Event */
+/* Media */
+@media (max-width: 767px) {
+    .container {
+        width: 350px;
+    }
+    .card .front,
+    .card .back {
+        min-height: 200px;
+    }
+}

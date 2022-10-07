@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Mastar Card</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="front">
+                    <header>
+                        <span class="logo">
+                            <img src="image/logo.png" alt="mastard card logo" />
+                            <h5>Master Card</h5>
+                        </span>
+                        <img src="image/chip.png" alt="chip of cards" class="chip">
+                    </header>
+                    <div class="card-details">
+                        <div class="name-number">
+                            <h6>Card Number</h6>
+                            <h5 class="henumber">#### #### ####</h5>
+                            <h5 class="hename">Your Name</h5>
+                        </div>
+                        <div class="valid-date">
+                            <h6>Valid Thru</h6>
+                            <h5>00/00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class=""></div>
+                    <div class="ccv">
+                        <span>ccv</span>
+                        <div class="white-projres"></div>
+                    </div>
+                    <div class="logo">
+                        <img src="image/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="forms">
+                <div class="column-1">
+                    <div class="num">
+                        <label for="num">Your Number of Card</label>
+                        <input type="number" name="num" id="formNum" />
+                    </div>
+                    <div class="name">
+                        <label for="name">Your First & Last Name</label>
+                        <input type="text" name="name" id="forName" />
+                    </div>
+                    <div class="data">
+                        <input type="number" placeholder="Month" id="month" />
+                        <input type="number" placeholder="Yaer" id="year" />
+                    </div>
+                    <button id="next">Next</button>
+                </div>
+                <div class="column-2">
+                    <h3>Your Seral Number</h3>
+                    <button>Seve</button>
+                    <button id="back">Back</button>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
