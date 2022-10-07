@@ -28,7 +28,7 @@ body {
 /* Start Front Card */
 .card .front {
     position: absolute;
-    background-image: url('/image/bg.png');
+    background-image: url('../image/bg.png');
     background-size: cover;
     padding: 25px;
     border-radius: 28px;
@@ -79,7 +79,7 @@ body {
 /* Start Back Card */
 .card .back {
     position: absolute;
-    background-image: url('/image/bg.png');
+    background-image: url('../image/bg.png');
     background-size: cover;
     padding: 25px;
     border-radius: 28px;
